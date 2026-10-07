@@ -1,0 +1,11 @@
+name: Idea
+description: A suggestion for the game, a commander, balance or the clients.
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What you would change, and why it would make the game better.
+    validations:
+      required: true

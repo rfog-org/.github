@@ -1,0 +1,33 @@
+name: Bug report
+description: Something in the game does not work as it should.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: client
+    attributes:
+      label: Where
+      options:
+        - Web app (desktop browser)
+        - Web app (phone)
+        - Terminal client
+        - SSH
+        - Self-hosted server
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or browser
+      description: "`rfog version` for the terminal client; the browser and device for the web app."
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else
+      description: Screenshots, the match link or replay, terminal size and colour support.
